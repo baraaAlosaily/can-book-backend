@@ -14,25 +14,26 @@ const seedUser = () => {
     email: 'seelbaraa@gmail.com',
     books: [
       {
-        name: 'Lord of the Rings',
-        description: 'A fight for the last ring from the 7 kings rings',
+        name: 'Forget the Alamo',
+        description: ' The Rise and Fall of an American Myth',
         status: 'New',
       },
       {
-        name: 'The best cook',
+        name: 'The Other Black Girl',
         description:
-          '100 of the best recipes in the Italian kitchen, by Chef Khaled Al-Shishani',
+          'The Other Black Girl is a 2021 novel by Zakiya Dalila Harris',
         status: 'New',
       },
       {
-        name: 'The world of tech',
+        name: 'We Were Not Men',
         description:
-          'Discussing one of the most exciting topics in the tech industry, with the hacker Anas Al-Ramahi',
+          'A novel that punches you in the heart: the powerful, unbearably moving and ultimately uplifting story of twin brothers',
         status: 'Old',
       },
     ],
   });
+  console.log(newUser);
   newUser.save();
 };
-
+seedUser();
 module.exports = userModel;
